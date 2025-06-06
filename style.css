@@ -1,0 +1,54 @@
+body {
+  background: black;
+  color: #0f0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#controls {
+  margin: 20px;
+}
+
+#smiley {
+  width: 200px;
+  height: 200px;
+  margin: 40px auto;
+  border-radius: 50%;
+  background: yellow;
+  position: relative;
+  box-shadow: 0 0 30px #f0f;
+  transform: scale(1);
+  transition: transform 0.1s linear;
+}
+
+#smiley::before,
+#smiley::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 60px;
+  background: black;
+  border-radius: 50%;
+}
+
+#smiley::before {
+  left: 40px;
+}
+
+#smiley::after {
+  right: 40px;
+}
+
+#smiley .mouth {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 60px;
+  border: 10px solid black;
+  border-top: none;
+  border-radius: 0 0 60px 60px;
+}
+
