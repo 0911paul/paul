@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Area – CanG Research Alliance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="member-page">
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo" aria-label="Zur Startseite">
+                <span class="logo-mark" aria-hidden="true">CanG</span>
+                <span class="logo-text">Research Alliance</span>
+            </a>
+            <button class="nav-toggle" aria-label="Navigation umschalten" aria-expanded="false">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+            <nav class="main-nav" aria-label="Member Navigation">
+                <ul>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#updates">Updates</a></li>
+                    <li><a href="#ressourcen">Ressourcen</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a class="button button-small" href="index.html">Zurück zur Website</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero member-hero" id="login">
+            <div class="container hero-content">
+                <div>
+                    <p class="eyebrow">Member Area</p>
+                    <h1>Exklusive Plattform für Forschende &amp; Ärzt:innen</h1>
+                    <p class="lead">Verwalten Sie Ihren Zugang, verfolgen Sie Studienfortschritte und vernetzen Sie sich mit der Community der CanG – Research Alliance.</p>
+                </div>
+                <form class="form-card form-card-compact">
+                    <h2>Mitglieder-Login</h2>
+                    <label for="member-email">E-Mail</label>
+                    <input id="member-email" type="email" name="email" placeholder="name@example.de" required>
+                    <label for="member-password">Passwort</label>
+                    <input id="member-password" type="password" name="password" placeholder="Passwort" required>
+                    <div class="form-actions">
+                        <label class="checkbox">
+                            <input type="checkbox" name="remember">
+                            <span>Angemeldet bleiben</span>
+                        </label>
+                        <a href="#">Passwort vergessen?</a>
+                    </div>
+                    <button type="submit" class="button">Login</button>
+                    <p class="form-note">Sie haben noch keinen Zugang? Kontaktieren Sie das Membership-Team.</p>
+                </form>
+            </div>
+        </section>
+
+        <section class="section alt" id="updates">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Aktuelle Forschungsupdates</h2>
+                    <p>Bleiben Sie informiert über laufende Studien, neue Genetiken und regulatorische Entwicklungen.</p>
+                </div>
+                <div class="grid grid-3">
+                    <article class="card">
+                        <h3>Klinische Studie C-21</h3>
+                        <p>Phase-II-Studie zur Schmerztherapie mit standardisiertem Cannabinoidprofil. Rekrutierung seit Q1/2024.</p>
+                        <a class="text-link" href="#">Studienprotokoll ansehen</a>
+                    </article>
+                    <article class="card">
+                        <h3>Genetik-Dashboard</h3>
+                        <p>Neue Marker für Terpenprofil T-09 hinzugefügt. Daten stehen als CSV-Download zur Verfügung.</p>
+                        <a class="text-link" href="#">Zum Dashboard</a>
+                    </article>
+                    <article class="card">
+                        <h3>Regulatory Briefing</h3>
+                        <p>Zusammenfassung der aktuellen CanG-Anpassungen inkl. Handlungsempfehlungen für Audits.</p>
+                        <a class="text-link" href="#">Briefing öffnen</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="ressourcen">
+            <div class="container split">
+                <div>
+                    <h2>Ressourcen-Center</h2>
+                    <p>Unsere Wissensbibliothek bündelt Whitepaper, SOPs, Schulungsunterlagen und Labordaten für den direkten Einsatz.</p>
+                    <ul class="icon-list">
+                        <li>
+                            <span class="icon" aria-hidden="true">📚</span>
+                            <div>
+                                <strong>Dokumentenbibliothek</strong>
+                                <p>Standard Operating Procedures, Compliance-Checklisten &amp; Formulare.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon" aria-hidden="true">💡</span>
+                            <div>
+                                <strong>Wissens-Sessions</strong>
+                                <p>On-Demand-Webinare und CME-zertifizierte Fortbildungen.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon" aria-hidden="true">🔬</span>
+                            <div>
+                                <strong>Labordaten</strong>
+                                <p>Analyseberichte, Batch-Freigaben und Qualitätsstatistiken.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card resources-card">
+                    <h3>Schnellzugriff</h3>
+                    <ul class="resource-links">
+                        <li><a href="#">Download: SOP Indoor-Modul v4.2</a></li>
+                        <li><a href="#">Template: Patienten-Aufnahmedokumentation</a></li>
+                        <li><a href="#">Whitepaper: Pharmakovigilanz 2024</a></li>
+                        <li><a href="#">Kalender: Schulungen &amp; Audits</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alt" id="support">
+            <div class="container split">
+                <div class="card support-card">
+                    <h2>Member Support</h2>
+                    <p>Unser Support-Team hilft bei allen Fragen rund um Zugang, Compliance und Forschung.</p>
+                    <div class="contact-grid">
+                        <div>
+                            <h3>Service Desk</h3>
+                            <p>support@cang-alliance.de<br>+49 30 1234 5679</p>
+                        </div>
+                        <div>
+                            <h3>Live-Chat</h3>
+                            <p>Mo–Fr 08:00–18:00 Uhr<br>Antwortzeit &lt; 15 Min.</p>
+                        </div>
+                        <div>
+                            <h3>Onboarding</h3>
+                            <p>Individuelle Einführungen für Teams &amp; Kliniken.</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="form-card" aria-labelledby="support-form">
+                    <h3 id="support-form">Ticket erstellen</h3>
+                    <label for="ticket-name">Name</label>
+                    <input id="ticket-name" type="text" placeholder="Ihr Name" required>
+                    <label for="ticket-mail">E-Mail</label>
+                    <input id="ticket-mail" type="email" placeholder="name@example.de" required>
+                    <label for="ticket-topic">Kategorie</label>
+                    <select id="ticket-topic">
+                        <option>Allgemeine Anfrage</option>
+                        <option>Technischer Support</option>
+                        <option>Compliance &amp; Audits</option>
+                        <option>Forschung &amp; Daten</option>
+                    </select>
+                    <label for="ticket-message">Beschreibung</label>
+                    <textarea id="ticket-message" rows="4" placeholder="Beschreiben Sie Ihr Anliegen"></textarea>
+                    <button type="submit" class="button">Absenden</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-mark">CanG</span>
+                    <span class="logo-text">Research Alliance</span>
+                </a>
+                <p class="footer-note">Exklusive Services für Mitglieder: Zugang zu Forschung, Daten und Community.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Bereiche</h4>
+                    <ul>
+                        <li><a href="#updates">Updates</a></li>
+                        <li><a href="#ressourcen">Ressourcen</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#login">Login</a></li>
+                        <li><a href="#">Mitglied werden</a></li>
+                        <li><a href="#">Sicherheit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-meta">
+                <p>&copy; <span id="year"></span> CanG – Research Alliance.</p>
+                <a href="#">Nutzungsbedingungen</a>
+                <a href="#">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
